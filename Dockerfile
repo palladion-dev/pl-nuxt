@@ -1,4 +1,4 @@
-FROM node:12.13.0-alpine
+FROM node:13.10.1-alpine3.11
 
 LABEL maintainer="akidsuki <akidsuki@palladion.jp>"
 
