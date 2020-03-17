@@ -3,7 +3,7 @@ FROM node:13.10.1-alpine3.11
 LABEL maintainer="akidsuki <akidsuki@palladion.jp>"
 
 RUN apk update \
-  && apk add --no-cache --update alpine-sdk build-base git g++ build-essential python make yarn \
+  && apk add --no-cache --update alpine-sdk build-base git g++ python make yarn \
   && yarn install --ignore-engines \
   && yarn cache clean \
   && yarn global add create-nuxt-app \
